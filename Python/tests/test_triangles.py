@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase
 from PythonPersonalProject.Python.models import triangles
 
 
-class TriangleTest(unittest.TestCase):
+class TriangleTest(TestCase):
     def test_check_valid_number_0(self):
         self.assertEqual(triangles.check_valid_number(7), 7)
 
