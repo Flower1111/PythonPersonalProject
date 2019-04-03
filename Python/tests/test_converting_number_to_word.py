@@ -1,8 +1,8 @@
-from unittest import TestCase, main
+from unittest import TestCase
 from PythonPersonalProject.Python.models.converting_number_to_word import number_to_word
 
 
-class Num2WordsRUTest(TestCase):
+class NumberToWordTest(TestCase):
 
     def test_different_numbers(self):
         self.assertEqual(number_to_word(1), "один")
@@ -34,4 +34,4 @@ class Num2WordsRUTest(TestCase):
 
 
 if __name__ == '__main__':
-    main()
+    NumberToWordTest()
