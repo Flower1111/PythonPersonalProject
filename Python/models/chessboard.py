@@ -16,7 +16,7 @@ class ChessBoard:
             print(''.join(row))
 
 
-def validation(entered_value):
+def check_valid_number(entered_value):
     try:
         number = int(entered_value)
         if number > 0:
@@ -24,5 +24,5 @@ def validation(entered_value):
         else:
             raise ValueError
     except ValueError:
-        print('Incorrect value. Number must be greater than 0')
+        print('Incorrect value. Values must be only integer numbers. Values must be greater than 0')
         return 0
