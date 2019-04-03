@@ -1,5 +1,5 @@
 from Python import do_continue
-from PythonPersonalProject.Python.models.chessboard import ChessBoard, validation
+from PythonPersonalProject.Python.models.chessboard import ChessBoard, check_valid_number
 
 
 if __name__ == '__main__':
@@ -8,9 +8,9 @@ if __name__ == '__main__':
         print('Enter height and width of chessboard. Values must be only integer numbers.')
         try:
             entered_value = input('Height: ')
-            height = validation(entered_value)
+            height = check_valid_number(entered_value)
             entered_value = input('Width: ')
-            width = validation(entered_value)
+            width = check_valid_number(entered_value)
         except ValueError:
             print('Incorrect input.')
             continue
