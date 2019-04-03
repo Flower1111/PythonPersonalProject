@@ -1,8 +1,8 @@
-import unittest
+from unittest import TestCase
 from PythonPersonalProject.Python.models import chessboard
 
 
-class ChessTest(unittest.TestCase):
+class ChessBoardTest(TestCase):
     def test_check_valid_number_0(self):
         self.assertEqual(chessboard.check_valid_number(8), 8)
 
@@ -26,4 +26,4 @@ class ChessTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    ChessBoardTest()
