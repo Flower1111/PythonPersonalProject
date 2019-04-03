@@ -3,7 +3,6 @@ from PythonPersonalProject.Python.models.converting_number_to_word import number
 
 
 class NumberToWordTest(TestCase):
-
     def test_different_numbers(self):
         self.assertEqual(number_to_word(1), "один")
         self.assertEqual(number_to_word(12), "двенадцать")
