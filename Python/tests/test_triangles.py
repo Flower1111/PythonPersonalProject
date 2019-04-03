@@ -41,4 +41,4 @@ class TriangleTest(TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    TriangleTest()
